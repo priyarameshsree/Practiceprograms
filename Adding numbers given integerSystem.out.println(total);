@@ -1,0 +1,24 @@
+import java.util.*;
+public class NetPrograms1{
+	public static void main (String[]args){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		sum(num);
+	}
+		public static void sum(int number){
+			int remainder=0;
+			int total=0;
+			while(number!=0)
+			{
+				remainder=number%10;
+				total=total+remainder;
+				number=number/10;
+				
+			}
+			System.out.println("Total of given integer is"+total);
+		
+	}	
+
+	}
+	
